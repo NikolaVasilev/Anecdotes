@@ -166,8 +166,6 @@ class ReactionApiView(APIView):
 
     # This post method performs 2 operations - Create, if reaction doesnt exist or Delete, if reaction exist
     # This allows FE to use same request for these operations
-    # Марто идеята я краднах от фейса :D - да не кажеш че ползвам пост за делийт операции,
-    # пък и ползвам композитен ключ така че реално ид на записа не ми трябва никъде :D :D
 
     def post(self, request, id):
         user_id = request.user.id
